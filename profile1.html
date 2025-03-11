@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Trương Thành Đạt</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #2c3e50;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #4a6b8a;
+        }
+        .profile-section {
+            display: flex;
+            margin-bottom: 2rem;
+            align-items: center;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 2rem;
+        }
+        .profile-info {
+            flex: 1;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .skill-container {
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            height: 25px;
+        }
+        .skill-level {
+            height: 100%;
+            border-radius: 10px;
+            background-color: #3498db;
+            color: white;
+            text-align: right;
+            padding-right: 10px;
+            line-height: 25px;
+            font-size: 14px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            flex: 1 0 45%;
+            margin: 5px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Profile</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="profile-section" id="about">
+            <img src="myface.jpg" alt="Trương Thành Đạt" class="profile-img">
+            <div class="profile-info">
+                <h2>Trương Thành Đạt</h2>
+                <p><strong>Date of Birth:</strong> January 15, 2003</p>
+                <p><strong>Location:</strong> Ho Chi Minh City, Vietnam</p>
+                <p>I am a dedicated and enthusiastic computer science student with a passion for software development and team leadership. I am currently leading Nhóm 5 in various projects and assignments.</p>
+            </div>
+        </div>
+
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Đại học Công nghệ TP.HCM (HUTECH)</h3>
+                <p><strong>Degree:</strong> software engineer </p>
+                <p><strong>Duration:</strong> 2021 - Present</p>
+                <p><strong>GPA:</strong> 3.2</p>
+            </div>
+        </div>
+
+        <div class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Web Development Intern</h3>
+                <p><strong>Company:</strong> Tech Solutions Vietnam</p>
+                <p><strong>Duration:</strong> June 2022 - September 2022</p>
+                <p>Worked on front-end development using HTML, CSS, and JavaScript. Collaborated with a team to deliver responsive web applications.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Student Project Team Leader</h3>
+                <p><strong>Project:</strong> Course Management System</p>
+                <p><strong>Duration:</strong> January 2023 - May 2023</p>
+                <p>Led a team of 5 students to develop a course management system for the university department. Managed tasks, conducted code reviews, and ensured timely delivery.</p>
+            </div>
+        </div>
+
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <p><strong>HTML/CSS</strong></p>
+            <div class="skill-container">
+                <div class="skill-level" style="width: 90%">90%</div>
+            </div>
+            <p><strong>JavaScript</strong></p>
+            <div class="skill-container">
+                <div class="skill-level" style="width: 85%">85%</div>
+            </div>
+            <p><strong>Java</strong></p>
+            <div class="skill-container">
+                <div class="skill-level" style="width: 80%">80%</div>
+            </div>
+            <p><strong>Python</strong></p>
+            <div class="skill-container">
+                <div class="skill-level" style="width: 75%">75%</div>
+            </div>
+            <p><strong>Team Leadership</strong></p>
+            <div class="skill-container">
+                <div class="skill-level" style="width: 95%">95%</div>
+            </div>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <p><strong>Email:</strong> dat.truong@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <p><strong>Phone:</strong> (+84) 123-456-789</p>
+                </div>
+                <div class="contact-item">
+                    <p><strong>LinkedIn:</strong> linkedin.com/in/truongthanhdat</p>
+                </div>
+                <div class="contact-item">
+                    <p><strong>GitHub:</strong> github.com/truongthanhdat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
