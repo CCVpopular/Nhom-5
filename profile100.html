@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+        
+        body {
+            background-color: #f7f9fc;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .profile-card {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .cover {
+            height: 120px;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+        }
+        
+        .profile-info {
+            position: relative;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: -60px;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin-top: 15px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .role {
+            color: #4facfe;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .bio {
+            padding: 0 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            color: #555;
+        }
+        
+        .stats div {
+            text-align: center;
+        }
+        
+        .stats span {
+            display: block;
+        }
+        
+        .stats .value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4facfe;
+        }
+        
+        .stats .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: #f0f2f5;
+            color: #555;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social a:hover {
+            background-color: #4facfe;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 8px 20px;
+            margin-top: 15px;
+            background-color: #4facfe;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #4295e6;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="cover"></div>
+        <div class="profile-info">
+            <img src="https://lh3.googleusercontent.com/d/1Mz1Zf7FVgiuW3HvgVdxpY-ceFu6EDwTS" alt="Avatar" class="avatar">
+            <h1>Trần Bùi Sơn Phú</h1>
+            <p class="role">Web Frontend Developer</p>
+            <p class="bio">Chuyên gia phát triển web với kinh nghiệm 3+ năm trong JavaScript, React và Node.js. Đam mê tạo ra trải nghiệm người dùng tuyệt vời.</p>
+            
+            <div class="stats">
+                <div>
+                    <span class="value">15+</span>
+                    <span class="label">Dự án</span>
+                </div>
+                <div>
+                    <span class="value">30+</span>
+                    <span class="label">Khách hàng</span>
+                </div>
+                <div>
+                    <span class="value">5+</span>
+                    <span class="label">Giải thưởng</span>
+                </div>
+            </div>
+            
+            <div class="social">
+                <a href="#" title="Facebook">FB</a>
+                <a href="#" title="Instagram">IG</a>
+                <a href="#" title="LinkedIn">LI</a>
+                <a href="#" title="GitHub">GH</a>
+            </div>
+            
+            <a href="#" class="btn">Liên hệ</a>
+        </div>
+    </div>
+</body>
